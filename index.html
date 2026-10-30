@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marty McFly - Currículo</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Inter & Courier Prime -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              mono: ['"Courier Prime"', 'monospace'],
+            },
+            colors: {
+              yellowBrand: '#E5D800',
+              darkBg: '#1f1f1f',
+              topBarBg: '#121212',
+              textPrimary: '#1a1a1a',
+              sectionTitle: '#a3a3a3',
+              lineBorder: '#e5e5e5',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        font-family: 'Inter', sans-serif;
+        background-color: #1f1f1f;
+        -webkit-font-smoothing: antialiased;
+      }
+      .font-mono-custom {
+        font-family: 'Courier Prime', monospace;
+      }
+      .section-heading {
+        font-family: 'Courier Prime', monospace;
+        letter-spacing: 0.15em;
+        font-size: 0.72rem;
+        font-weight: 700;
+        color: #a3a3a3;
+      }
+    </style>
+</head>
+<body class="min-h-screen bg-darkBg flex flex-col items-center">
+
+    <!-- Barra Superior Preta com HOME -->
+    <header class="w-full bg-topBarBg py-2 px-6 border-b border-neutral-800">
+        <span class="text-neutral-400 font-mono-custom text-xs uppercase tracking-wider">HOME</span>
+    </header>
+
+    <!-- Wrapper Central para o Cartão do Currículo -->
+    <main class="w-full flex-1 flex items-center justify-center p-3 sm:p-6 md:p-10">
+        <!-- Cartão Branco Centralizado -->
+        <div class="bg-white text-textPrimary max-w-[940px] w-full shadow-2xl p-6 sm:p-10 md:p-14 my-4">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-10">
+                
+                <!-- COLUNA DA ESQUERDA -->
+                <div class="md:col-span-7 flex flex-col justify-between md:border-r md:border-lineBorder md:pr-10">
+                    <div>
+                        <!-- Header do Nome e Bloco Amarelo MM -->
+                        <div class="flex items-start gap-5 mb-7">
+                            <div class="bg-yellowBrand w-[76px] h-[76px] shrink-0 flex items-center justify-center">
+                                <span class="font-bold text-3xl tracking-tighter text-black font-sans">MM</span>
+                            </div>
+                            <div class="pt-1.5">
+                                <h1 class="text-lg sm:text-xl font-bold font-mono-custom text-black tracking-tight leading-none mb-2">Marty McFly</h1>
+                                <p class="text-[11px] font-mono-custom text-gray-600 leading-snug">Consultor de Cronologia e Especialista em Performance Musical</p>
+                            </div>
+                        </div>
+
+                        <!-- Resumo Biográfico -->
+                        <p class="text-[11px] sm:text-[11.5px] text-gray-800 leading-relaxed mb-9 font-normal">
+                            Jovem dinâmico, pontual (quando o capacitor de fluxo permite) e com vasta experiência em resolução de paradoxos temporais. Guitarrista talentoso com domínio de técnicas avançadas de shredding antes mesmo de serem inventadas. Experiente em lidar com figuras históricas, direção defensiva de veículos modificados e skate urbano. Nota: Não me chame de frangote.
+                        </p>
+
+                        <!-- Seção Experiências Profissionais -->
+                        <div>
+                            <h2 class="section-heading uppercase mb-5">EXPERIÊNCIAS PROFISSIONAIS</h2>
+
+                            <div class="space-y-6">
+                                <!-- Exp 1 -->
+                                <div>
+                                    <h3 class="text-[13px] font-bold text-black">1985 – Presente | The Pinheads</h3>
+                                    <p class="text-[11px] font-mono-custom font-bold text-gray-500 mt-0.5">Guitarrista Principal</p>
+                                    <p class="text-[11px] text-gray-700 mt-1.5 leading-relaxed">
+                                        Composição e performance de Rock 'n' Roll. Responsável pela audição da "Batalha das Bandas" (mesmo sendo considerado "barulhento demais" por alguns juízes).
+                                    </p>
+                                </div>
+
+                                <!-- Exp 2 -->
+                                <div>
+                                    <h3 class="text-[13px] font-bold text-black">1955 – Baile Encanto sob o Mar</h3>
+                                    <p class="text-[11px] font-mono-custom font-bold text-gray-500 mt-0.5">Músico Substituto (Guitarra)</p>
+                                    <p class="text-[11px] text-gray-700 mt-1.5 leading-relaxed">
+                                        Substituição emergencial do guitarrista Marvin Berry. Responsável pela introdução cultural do gênero Heavy Metal trinta anos antes do previsto.
+                                    </p>
+                                </div>
+
+                                <!-- Exp 3 -->
+                                <div>
+                                    <h3 class="text-[13px] font-bold text-black">1885 – Consultoria de Segurança Hill Valley (Velho Oeste)</h3>
+                                    <p class="text-[11px] font-mono-custom font-bold text-gray-500 mt-0.5">Assistente de Ferreiro</p>
+                                    <p class="text-[11px] text-gray-700 mt-1.5 leading-relaxed">
+                                        Auxílio técnico em engenharia ferroviária improvisada e mediação de conflitos com a gangue de Buford "Cachorro Louco" Tannen.
+                                    </p>
+                                </div>
+
+                                <!-- Exp 4 -->
+                                <div>
+                                    <h3 class="text-[13px] font-bold text-black">1985 – Indústrias Biffco</h3>
+                                    <p class="text-[11px] font-mono-custom font-bold text-gray-500 mt-0.5">Sobrevivente Urbano</p>
+                                    <p class="text-[11px] text-gray-700 mt-1.5 leading-relaxed">
+                                        Gestão de crises em ambientes distópicos e recuperação de artefatos esportivos (almanaques) para restauração da ordem cronológica.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- LINHA HORIZONTAL ESQUERDA (Antes do Copyright) -->
+                    <div class="mt-10 pt-5 border-t border-lineBorder">
+                        <p class="text-[10px] font-mono-custom text-gray-400 tracking-wider font-bold">COPYRIGHT 2026 - TODOS OS DIREITOS RESERVADOS</p>
+                    </div>
+                </div>
+
+                <!-- COLUNA DA DIREITA -->
+                <!-- pt-0 no mobile / pt-[112px] no desktop para rebaixar "EDUCAÇÃO" exatamente até a altura do término do bloco MM/nome -->
+                <div class="md:col-span-5 flex flex-col justify-between pt-0 md:pt-[112px]">
+                    <div>
+                        <!-- Seção Educação -->
+                        <div>
+                            <h2 class="section-heading uppercase mb-5">EDUCAÇÃO</h2>
+
+                            <div class="space-y-6">
+                                <!-- Edu 1 -->
+                                <div>
+                                    <h3 class="text-[13px] font-bold text-black">1986 | Hill Valley High School</h3>
+                                    <p class="text-[11px] font-mono-custom font-bold text-gray-500 mt-0.5">Ensino Médio Completo</p>
+                                    <p class="text-[11px] text-gray-700 mt-1.5 leading-relaxed">Foco em Artes e Música</p>
+                                </div>
+
+                                <!-- Edu 2 -->
+                                <div>
+                                    <h3 class="text-[13px] font-bold text-black">1955 | Cultural Hill Valley</h3>
+                                    <p class="text-[11px] font-mono-custom font-bold text-gray-500 mt-0.5">Intercâmbio</p>
+                                    <p class="text-[11px] text-gray-700 mt-1.5 leading-relaxed">
+                                        Estudos intensivos sobre dinâmicas sociais da década de 50 e etiqueta de lanchonetes.
+                                    </p>
+                                </div>
+
+                                <!-- Edu 3 -->
+                                <div>
+                                    <h3 class="text-[13px] font-bold text-black">1985 | Engenharia Aplicada</h3>
+                                    <p class="text-[11px] font-mono-custom font-bold text-gray-500 mt-0.5">Workshop</p>
+                                    <p class="text-[11px] text-gray-700 mt-1.5 leading-relaxed">
+                                        Treinamento prático em sistemas de 1.21 Gigawatts e mecânica de DeLorean (sob mentoria do Dr. Emmett Brown).
+                                    </p>
+                                </div>
+
+                                <!-- Edu 4 -->
+                                <div>
+                                    <h3 class="text-[13px] font-bold text-black">2015 | Mobilidade Urbana Futurista</h3>
+                                    <p class="text-[11px] font-mono-custom font-bold text-gray-500 mt-0.5">Treinamento</p>
+                                    <p class="text-[11px] text-gray-700 mt-1.5 leading-relaxed">
+                                        Curso intensivo de pilotagem de Hoverboard em superfícies sólidas (atenção: pranchas não funcionam na água sem potência extra).
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- LINHA HORIZONTAL DIREITA (Divisória entre Educação e Contato) -->
+                    <div class="mt-10 pt-5 border-t border-lineBorder">
+                        <h2 class="section-heading uppercase mb-3">CONTATO</h2>
+                        <div class="space-y-1.5 text-[10px] sm:text-[10.5px] text-gray-900 font-mono-custom">
+                            <p><strong class="font-bold font-sans">ENDEREÇO:</strong> Lyon Estates, Hill Valley, CA.</p>
+                            <p><strong class="font-bold font-sans">E-MAIL:</strong> contato@delorean.com</p>
+                            <p><strong class="font-bold font-sans">TELEFONE:</strong> +55 (88) 9999 0000</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>
